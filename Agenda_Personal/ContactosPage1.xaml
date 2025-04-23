@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda_Personal.ContactosPage1"
+             Title="ContactosPage1"
+             BackgroundColor="{StaticResource FondoColor}">
+    <VerticalStackLayout Padding="10">
+        <Label
+            Text="Mis contactos"
+            FontSize="Large"
+            TextColor="{StaticResource TextColor}"
+            />
+
+        <CollectionView ItemsSource="{Binding contactos}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Margin="5" Padding="10">
+                        <StackLayout>
+                            <Label Text="{Binding Nombre}"
+                                   FontAttributes="Bold"
+                                   TextColor="{StaticResource TextColor}"/>
+                            <Label Text="{Binding Telefono}"
+                                   TextColor="{StaticResource TextColor}"/>
+                            <Label Text="{Binding Correo}"
+                                   TextColor="{StaticResource TextColor}"/>
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

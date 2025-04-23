@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda_Personal.DetalleContactoPage"
+             Title="DetalleContactoPage"
+             BackgroundColor="{StaticResource FondoColor}">
+    <VerticalStackLayout>
+
+        <Grid Padding="10" 
+              ColumnDefinitions="Auto,*"
+              RowDefinitions="Auto,Auto,Auto,Auto">
+            <Label Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Nombre:"
+                   FontAttributes="Bold"/>
+            <Label Grid.Row="0"
+                   Grid.Column="1"
+                   Text="{Binding Nombre}"
+                   TextColor="{StaticResource TextColor}"/>
+            <Label Grid.Row="1"
+                   Grid.Column="0"
+                   Text="Telefono:"
+                   FontAttributes="Bold"/>
+            <Label Grid.Row="1"
+                   Grid.Column="1"
+                   Text="{Binding Telefono}"
+                   TextColor="{StaticResource TextColor}"/>
+            <Label Grid.Row="2"
+                   Grid.Column="0"
+                   Text="Correo:"
+                   FontAttributes="Bold"/>
+            <Label Grid.Row="2"
+                   Grid.Column="1"
+                   Text="{Binding Correo}"
+                   TextColor="{StaticResource TextColor}"/>
+            <Label Grid.Row="3"
+                   Grid.Column="0"
+                   Text="Direccion:"
+                   FontAttributes="Bold"/>
+            <Label Grid.Row="3"
+                   Grid.Column="1"
+                   Text="{Binding Direccion}"
+                   TextColor="{StaticResource TextColor}"/>
+
+        </Grid>
+        
+    </VerticalStackLayout>
+</ContentPage>

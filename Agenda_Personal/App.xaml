@@ -1,0 +1,20 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Agenda_Personal"
+             x:Class="Agenda_Personal.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <!--paleta de colores para todos los SO -->
+            <Color x:Key="FondoColor">#1E1E1E</Color>
+            <Color x:Key="TextColor">#E0E0E0</Color>
+            <Color x:Key="BotonColor">#3A86FF</Color>
+            <Color x:Key="BordeColor">#555555</Color>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

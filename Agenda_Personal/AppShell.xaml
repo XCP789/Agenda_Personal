@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Agenda_Personal.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Agenda_Personal"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Agenda_Personal"
+    FlyoutBackgroundColor="#42474f">
+
+    <ShellContent
+        Title="Menu"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    <!--Menu de direccion entre paginas -->
+    <ShellContent 
+        Title="Contactos"
+        Route="ListaContactos" 
+        ContentTemplate="{DataTemplate local:ContactosPage1}" />
+    <ShellContent 
+        Title="Crear Contacto"
+        Route="CrearContacto" 
+        ContentTemplate="{DataTemplate local:CrearContactoPage}" />
+    <ShellContent 
+        Title="Configuracion"
+        Route="Configuracion" 
+        ContentTemplate="{DataTemplate local:ConfiguracionPage}" />
+
+</Shell>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda_Personal.CrearContactoPage"
+             Title="CrearContactoPage"
+             BackgroundColor="{StaticResource FondoColor}">
+    <FlexLayout
+        Direction="Column"
+        AlignItems="Start"
+        JustifyContent="Center"
+        Padding="50">
+        
+        <Entry Placeholder="Nombre"
+               WidthRequest="250"
+               BackgroundColor="{StaticResource BordeColor}"
+               TextColor="{StaticResource TextColor}"
+               PlaceholderColor="{StaticResource TextColor}"
+               Margin="0,10,0,0"
+               />
+        
+        <Entry Placeholder="Telefono"
+               WidthRequest="250"
+               BackgroundColor="{StaticResource BordeColor}"
+               TextColor="{StaticResource TextColor}"
+               PlaceholderColor="{StaticResource TextColor}"
+               Margin="0,10,0,0"
+               />
+        
+        <Entry Placeholder="Correo"
+               WidthRequest="250"
+               BackgroundColor="{StaticResource BordeColor}"
+               TextColor="{StaticResource TextColor}"
+               PlaceholderColor="{StaticResource TextColor}"
+               Margin="0,10,0,0"
+               />
+        
+        <Entry Placeholder="Direccion"
+               WidthRequest="250"
+               BackgroundColor="{StaticResource BordeColor}"
+               TextColor="{StaticResource TextColor}"
+               PlaceholderColor="{StaticResource TextColor}"
+               Margin="0,10,0,15"
+               />
+        
+        <Button Text="Guardar Contacto"
+                WidthRequest="250"
+                BackgroundColor="{StaticResource BotonColor}"
+                TextColor="{StaticResource TextColor}"
+                CornerRadius="15"/>
+
+    </FlexLayout>
+        
+</ContentPage>

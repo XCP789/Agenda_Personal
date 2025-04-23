@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda_Personal.MainPage"
+             Title="Mi Agenda Personal"
+             BackgroundColor="{StaticResource FondoColor}">
+
+    <ScrollView>
+        <StackLayout Padding="40" Spacing="30">
+            
+            <Button
+                Text="Lista de contactos" 
+                Clicked="IrListaContactos"
+                BackgroundColor="{StaticResource BotonColor}"
+                CornerRadius="15"
+                WidthRequest="200"
+                />
+            <Button
+                Text="Crear Nuevo Contacto"
+                Clicked="IrCrearContacto"
+                BackgroundColor="{StaticResource BotonColor}"
+                CornerRadius="15"
+                WidthRequest="200"
+                />
+            <Button
+                Text="Configuracion"
+                Clicked="IrConfiguracion"
+                BackgroundColor="{StaticResource BotonColor}"
+                CornerRadius="15"
+                WidthRequest="200"
+                />
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>
