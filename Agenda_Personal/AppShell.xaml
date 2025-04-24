@@ -7,12 +7,12 @@
     Shell.FlyoutBehavior="Flyout"
     Title="Agenda_Personal"
     FlyoutBackgroundColor="#42474f">
-
+    <!-- Menu direccion entre paginas-->
     <ShellContent
         Title="Menu"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-    <!--Menu de direccion entre paginas -->
+    
     <ShellContent 
         Title="Contactos"
         Route="ListaContactos" 
