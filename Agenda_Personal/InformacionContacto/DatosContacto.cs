@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Agenda_Personal.InformacionContacto
 {
-    class DatosContacto
+    public class DatosContacto
     {
         public string Nombre { get; set; }
         public string Telefono { get; set; }

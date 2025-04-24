@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Agenda_Personal.InformacionContacto;
+using Microsoft.Extensions.Logging;
 
 namespace Agenda_Personal
 {
@@ -14,6 +15,9 @@ namespace Agenda_Personal
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+            
+            //builder.Services.AddSingleton<ContactosViewModel>();
+            //builder.Services.AddSingleton<ContactosPage1>();
 
 #if DEBUG
     		builder.Logging.AddDebug();

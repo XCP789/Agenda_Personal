@@ -11,6 +11,7 @@
         Padding="50">
         
         <Entry Placeholder="Nombre"
+               x:Name="nombreEntry"
                WidthRequest="250"
                BackgroundColor="{StaticResource BordeColor}"
                TextColor="{StaticResource TextColor}"
@@ -19,6 +20,7 @@
                />
         
         <Entry Placeholder="Telefono"
+               x:Name="telefonoEntry"
                WidthRequest="250"
                BackgroundColor="{StaticResource BordeColor}"
                TextColor="{StaticResource TextColor}"
@@ -27,6 +29,7 @@
                />
         
         <Entry Placeholder="Correo"
+               x:Name="correoEntry"
                WidthRequest="250"
                BackgroundColor="{StaticResource BordeColor}"
                TextColor="{StaticResource TextColor}"
@@ -35,6 +38,7 @@
                />
         
         <Entry Placeholder="Direccion"
+               x:Name="direccionEntry"
                WidthRequest="250"
                BackgroundColor="{StaticResource BordeColor}"
                TextColor="{StaticResource TextColor}"
@@ -46,7 +50,8 @@
                 WidthRequest="250"
                 BackgroundColor="{StaticResource BotonColor}"
                 TextColor="{StaticResource TextColor}"
-                CornerRadius="15"/>
+                CornerRadius="15"
+                Clicked="GuardarContacto"/>
 
     </FlexLayout>
         

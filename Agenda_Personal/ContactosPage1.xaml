@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Agenda_Personal.ContactosPage1"
              Title="ContactosPage1"
-             BackgroundColor="{StaticResource FondoColor}">
+             BackgroundColor="{StaticResource FondoColor}"
+             BindingContext="{x:Static local:App.ContactosVM}">
+    
     <VerticalStackLayout Padding="10">
         <Label
             Text="Mis contactos"
@@ -11,7 +13,7 @@
             TextColor="{StaticResource TextColor}"
             />
 
-        <CollectionView ItemsSource="{Binding contactos}">
+        <CollectionView ItemsSource="{Binding Contactos}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Frame Margin="5" Padding="10">

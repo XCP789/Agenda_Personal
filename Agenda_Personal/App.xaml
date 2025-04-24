@@ -9,7 +9,7 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
-            <!--paleta de colores para todos los SO -->
+            <!--paleta de colores para toda la interfaz -->
             <Color x:Key="FondoColor">#1E1E1E</Color>
             <Color x:Key="TextColor">#E0E0E0</Color>
             <Color x:Key="BotonColor">#3A86FF</Color>

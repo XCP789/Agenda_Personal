@@ -10,24 +10,24 @@ using System.Windows.Input;
 
 namespace Agenda_Personal.InformacionContacto
 {
-    class ContactosViewModel : INotifyPropertyChanged
+    public class ContactosViewModel : INotifyPropertyChanged
     {
-        public ObservableCollection<DatosContacto> Contactos { get; set; }
-        public ICommand AgregarContactoCommand { get; }
+        public ObservableCollection<DatosContacto> Contactos { get; set; } = new ObservableCollection<DatosContacto> ();
+        public ICommand AgregarContactoCommand { get; private set; }
 
         public ContactosViewModel() 
         {
-            Contactos = new ObservableCollection<DatosContacto>();
             AgregarContactoCommand = new Command<DatosContacto>(AgregarContactos);
         }
 
         public void AgregarContactos(DatosContacto NuevoContacto)
         {
-            if (NuevoContacto != null && !String.IsNullOrWhiteSpace(NuevoContacto.Nombre))
+            if (NuevoContacto != null && !string.IsNullOrWhiteSpace(NuevoContacto.Nombre))
             { 
                 Contactos.Add(NuevoContacto);
             }
         }
         public event PropertyChangedEventHandler? PropertyChanged;
+        
     }
 }
