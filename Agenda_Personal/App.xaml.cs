@@ -4,12 +4,10 @@ namespace Agenda_Personal
 {
     public partial class App : Application
     {
-        public static ContactosViewModel ContactosVM { get; private set; }
+        public static ContactosViewModel ContactosVM { get; private set; } = new ContactosViewModel();
         public App()
         {
             InitializeComponent();
-            ContactosVM = new ContactosViewModel();
-            MainPage = new AppShell();
         }
 
         protected override Window CreateWindow(IActivationState? activationState)

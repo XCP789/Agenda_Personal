@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Agenda_Personal.ContactosPage1"
-             Title="ContactosPage1"
+             Title="Contactos"
              BackgroundColor="{StaticResource FondoColor}"
-             BindingContext="{x:Static local:App.ContactosVM}">
+             >
     
     <VerticalStackLayout Padding="10">
         <Label
@@ -16,7 +16,7 @@
         <CollectionView ItemsSource="{Binding Contactos}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Frame Margin="5" Padding="10">
+                    <Border Margin="5" Padding="10">
                         <StackLayout>
                             <Label Text="{Binding Nombre}"
                                    FontAttributes="Bold"
@@ -26,7 +26,7 @@
                             <Label Text="{Binding Correo}"
                                    TextColor="{StaticResource TextColor}"/>
                         </StackLayout>
-                    </Frame>
+                    </Border>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

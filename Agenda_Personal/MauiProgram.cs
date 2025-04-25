@@ -16,8 +16,8 @@ namespace Agenda_Personal
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
             
-            //builder.Services.AddSingleton<ContactosViewModel>();
-            //builder.Services.AddSingleton<ContactosPage1>();
+            builder.Services.AddSingleton<ContactosViewModel>();
+            builder.Services.AddSingleton<ContactosPage1>();
 
 #if DEBUG
     		builder.Logging.AddDebug();
