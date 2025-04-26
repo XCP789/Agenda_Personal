@@ -20,10 +20,18 @@ namespace Agenda_Personal.InformacionContacto
             AgregarContactoCommand = new Command<DatosContacto>(AgregarContactos);
         }
 
-        public void AgregarContactos(DatosContacto NuevoContacto)
+        private async void AgregarContactos(DatosContacto NuevoContacto)
         {
-            if (NuevoContacto != null && !string.IsNullOrWhiteSpace(NuevoContacto.Nombre))
-            { 
+            if (Contactos.Any(c => c.Telefono == NuevoContacto.Telefono))
+            {
+                if (App.Current != null && App.Current.Windows.Count>0 && App.Current.Windows[0].Page != null)
+                { 
+                    await App.Current.Windows[0].Page.DisplayAlert("Advertencia", "Este Numero esta repetido, por favor ingresa otro.", "Aceptar");
+                }
+                    return;
+            }
+            if (!string.IsNullOrWhiteSpace(NuevoContacto.Nombre) && !string.IsNullOrWhiteSpace(NuevoContacto.Telefono)) 
+            {
                 Contactos.Add(NuevoContacto);
             }
         }

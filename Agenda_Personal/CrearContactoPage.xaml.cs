@@ -21,6 +21,7 @@ public partial class CrearContactoPage : ContentPage
 			Correo = correoEntry.Text,
 			Direccion = direccionEntry.Text
 		};
+
 		ViewModel.AgregarContactoCommand.Execute(nuevoContacto);
 		Shell.Current.GoToAsync("//ContantosPage1");
 	}
