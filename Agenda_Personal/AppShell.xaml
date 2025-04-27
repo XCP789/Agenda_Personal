@@ -6,24 +6,48 @@
     xmlns:local="clr-namespace:Agenda_Personal"
     Shell.FlyoutBehavior="Flyout"
     Title="Agenda_Personal"
-    FlyoutBackgroundColor="#42474f">
+    FlyoutBackgroundColor="#636569">
+
     <!-- Menu direccion entre paginas-->
     <ShellContent
-        Title="Menu"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    Title="Menu"
+    ContentTemplate="{DataTemplate local:MainPage}"
+    Route="MainPage" />
+
+    <ShellContent 
+    Title="Contactos"
+    Route="ListaContactos" 
+    ContentTemplate="{DataTemplate local:ContactosPage1}" />
+    <ShellContent 
+    Title="Crear Contacto"
+    Route="CrearContacto" 
+    ContentTemplate="{DataTemplate local:CrearContactoPage}" />
+    <ShellContent 
+    Title="Configuracion"
+    Route="Configuracion" 
+    ContentTemplate="{DataTemplate local:ConfiguracionPage}" />
+    <ShellContent 
+    Route="detalle" 
+    ContentTemplate="{DataTemplate local:DetalleContactoPage}"/>
     
-    <ShellContent 
-        Title="Contactos"
-        Route="ListaContactos" 
-        ContentTemplate="{DataTemplate local:ContactosPage1}" />
-    <ShellContent 
-        Title="Crear Contacto"
-        Route="CrearContacto" 
-        ContentTemplate="{DataTemplate local:CrearContactoPage}" />
-    <ShellContent 
-        Title="Configuracion"
-        Route="Configuracion" 
-        ContentTemplate="{DataTemplate local:ConfiguracionPage}" />
+    
+    <!-- Edicion del menu lateral-->
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid Padding="10">
+                <Label Text="{Binding Title}"
+                       FontSize="Medium"
+                       TextColor="White"/>
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+        <!-- Edicion del menu superior-->
+    <Shell.Resources>
+        <Style TargetType="Shell">
+            <Setter Property="Shell.BackgroundColor" Value="{StaticResource BotonColor}"/>
+            <Setter Property="Shell.ForegroundColor" Value="{StaticResource White}"/>
+        </Style>
+    </Shell.Resources>
+    
 
 </Shell>

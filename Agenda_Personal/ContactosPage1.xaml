@@ -13,10 +13,12 @@
             TextColor="{StaticResource TextColor}"
             />
 
-        <CollectionView ItemsSource="{Binding Contactos}">
+        <CollectionView ItemsSource="{Binding Contactos}" 
+                        SelectionMode="Single"
+                        SelectedItem="{Binding ContactoSeleccionado, Mode=TwoWay}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Border Margin="5" Padding="10">
+                    <Border StrokeThickness="2" Margin="5" Padding="10">
                         <StackLayout>
                             <Label Text="{Binding Nombre}"
                                    FontAttributes="Bold"
