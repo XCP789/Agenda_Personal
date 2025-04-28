@@ -11,4 +11,6 @@ public partial class ContactosPage1 : ContentPage
 		BindingContext = vm;	
 		ViewModel = vm;
 	}
+
+    
 }

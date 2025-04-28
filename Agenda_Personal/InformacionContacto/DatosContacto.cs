@@ -13,5 +13,6 @@ namespace Agenda_Personal.InformacionContacto
         public string Correo { get; set; }
         public string Direccion { get; set; }
 
+
     }
 }

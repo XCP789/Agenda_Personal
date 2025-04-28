@@ -16,10 +16,21 @@
         <CollectionView ItemsSource="{Binding Contactos}" 
                         SelectionMode="Single"
                         SelectedItem="{Binding ContactoSeleccionado, Mode=TwoWay}">
+
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Border StrokeThickness="2" Margin="5" Padding="10">
-                        <StackLayout>
+                    <Border Stroke="{StaticResource BotonColor}" StrokeThickness="2" Margin="5" Padding="10">
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup Name="CommonStates">
+                            <VisualState Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="Transparent"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                        
+                        <StackLayout >
                             <Label Text="{Binding Nombre}"
                                    FontAttributes="Bold"
                                    TextColor="{StaticResource TextColor}"/>
@@ -28,7 +39,8 @@
                             <Label Text="{Binding Correo}"
                                    TextColor="{StaticResource TextColor}"/>
                         </StackLayout>
-                    </Border>
+                    
+                </Border>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

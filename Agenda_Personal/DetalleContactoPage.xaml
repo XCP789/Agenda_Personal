@@ -6,54 +6,60 @@
              BackgroundColor="{StaticResource FondoColor}">
     <VerticalStackLayout>
 
-        <Grid Padding="10" 
+        <Frame BorderColor="{StaticResource BotonColor}" CornerRadius="15" Padding="10" Margin="30" BackgroundColor="{StaticResource FondoColor}">
+            <Grid Padding="20" 
               ColumnDefinitions="Auto,*"
               RowDefinitions="Auto,Auto,Auto,Auto">
-            <Label Grid.Row="0"
+                
+                <Label Grid.Row="0"
                    Grid.Column="0"
                    Text="Nombre:"
                    FontAttributes="Bold"
                    TextColor="White"/>
-            
-            <Label Grid.Row="0"
+
+                <Label Grid.Row="0"
                    Grid.Column="1"
                    Text="{Binding Nombre}"
-                   TextColor="White"/>
-            
-            <Label Grid.Row="1"
+                   TextColor="White"
+                   FontSize="Medium"/>
+
+                <Label Grid.Row="1"
                    Grid.Column="0"
                    Text="Telefono:"
                    FontAttributes="Bold"
                    TextColor="White"/>
-            
-            <Label Grid.Row="1"
+
+                <Label Grid.Row="1"
                    Grid.Column="1"
                    Text="{Binding Telefono}"
-                   TextColor="White"/>
-            
-            <Label Grid.Row="2"
+                   TextColor="White"
+                   FontSize="Medium"/>
+
+                <Label Grid.Row="2"
                    Grid.Column="0"
                    Text="Correo:"
                    FontAttributes="Bold"
                    TextColor="White"/>
-            
-            <Label Grid.Row="2"
+
+                <Label Grid.Row="2"
                    Grid.Column="1"
                    Text="{Binding Correo}"
-                   TextColor="White"/>
-            
-            <Label Grid.Row="3"
+                   TextColor="White"
+                   FontSize="Medium"/>
+
+                <Label Grid.Row="3"
                    Grid.Column="0"
                    Text="Direccion:"
                    FontAttributes="Bold"
                    TextColor="White"/>
-            
-            <Label Grid.Row="3"
+
+                <Label Grid.Row="3"
                    Grid.Column="1"
                    Text="{Binding Direccion}"
-                   TextColor="White"/>
+                   TextColor="White"
+                   FontSize="Medium"/>
 
-        </Grid>
-        
+            </Grid>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>
