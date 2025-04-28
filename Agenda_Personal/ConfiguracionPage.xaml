@@ -28,7 +28,8 @@
             TextColor="{StaticResource TextColor}"
             BackgroundColor="{StaticResource BotonColor}"
             AbsoluteLayout.LayoutBounds="0.5,0.5,150,40"
-            AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            Clicked="CambiarTema"/>
 
     </AbsoluteLayout>
 </ContentPage>
